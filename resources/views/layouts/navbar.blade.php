@@ -8,7 +8,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <a class="navbar-brand" href="{{url('/')}}">
             <img src="{{url('../images/splash.jpg')}}" width="30" height="30" class="d-inline-block align-top" alt="">
-            Berozgaar
+            Laramail
           </a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">

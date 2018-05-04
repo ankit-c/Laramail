@@ -8,6 +8,8 @@
         <title>{{ config('app.name') }}</title>
 
         <!-- Fonts -->
+        <link href="{{ URL::asset('/css/style.css') }}" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Styles -->
@@ -17,6 +19,10 @@
                     }
                 li a{
                     color: #000;
+                }
+
+                body{
+                    background-color: #E6E6FA ;
                 }
                 .nav>li {
                   position: relative;
@@ -50,7 +56,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
               <a class="navbar-brand" href="{{url('/')}}">
                 <img src="{{url('../images/splash.jpg')}}" width="30" height="30" class="d-inline-block align-top" alt="">
-                Berozgaar
+                Laramail
               </a>
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
               <li class="nav-item">
@@ -79,6 +85,7 @@
             </ul>
           </div>
         </nav>
+
         @yield('content')
         <!--JavaScripts-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
